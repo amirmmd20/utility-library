@@ -1,3 +1,6 @@
+#ifdef FUNCTION_H
+#define FUNCTION_H
+int sumDigit(int n);
 int isOdd(int n);
 #ifdef FUNCTION_H
 #define FUNCTION_H
