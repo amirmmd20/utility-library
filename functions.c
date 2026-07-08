@@ -1,3 +1,15 @@
+#include <stdio.h>
+#include "functions.h"
+int sumDigit(int n){
+    int sum=0;
+    if(n<0)
+        n=-n;
+    while (n>0){
+        sum += n%10;
+        n = n/10;
+    }
+    return sum;
+}
 #include "functions.h"
 
 int isOdd(int n)
@@ -59,6 +71,35 @@ while (1){
     }
 max +=x;
 }
+}
+
+<<<<<<< HEAD
+int isEven(int n)
+{
+    return n % 2 == 0;
+=======
+int factorial(int n)
+{
+    if (n < 0)
+        return -1;
+
+    int result = 1;
+
+    for (int i = 1; i <= n; i++)
+    {
+        result *= i;
+    }
+
+    return result;
+}
+int gcd(int a, int b) {
+    while (b != 0) {
+        int t = b;
+        b = a % b;
+        a = t;
+    }
+    return a;
+>>>>>>> cb732422fdfe26670edd6bc664934934877a460e
 }
 
 int isEven(int n)
